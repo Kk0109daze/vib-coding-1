@@ -1,0 +1,59 @@
+body {
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #ffffff;
+	transition: background 240ms ease;
+}
+
+.card {
+	background: rgba(255,255,255,0.85);
+	padding: 20px 24px;
+	border-radius: 12px;
+	box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+	max-width: 420px;
+	width: 100%;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+input[type="text"] {
+	width: calc(100% - 96px);
+	padding: 10px 12px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-size: 14px;
+}
+
+.controls {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+button {
+	padding: 10px 14px;
+	border-radius: 8px;
+	border: none;
+	background: #0b5cff;
+	color: white;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.hint {
+	margin-top: 10px;
+	color: #555;
+	font-size: 13px;
+}
+
+.invalid {
+	outline: 2px solid #ff4d4f;
+}
